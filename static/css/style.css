@@ -1,0 +1,146 @@
+/* Variables para un tema moderno y fácil de cambiar */
+:root {
+    --color-primary: #007bff;     /* Azul profesional */
+    --color-secondary: #f8f9fa;  /* Fondo claro */
+    --color-text: #343a40;       /* Texto oscuro */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-secondary);
+}
+
+.profile-pic {
+    width: 200px; /* Tamaño de la imagen */
+    height: 200px; /* Asegura que sea cuadrada para el radio */
+    border-radius: 50%; /* Hace la imagen redonda */
+    object-fit: cover; /* Recorta la imagen para que encaje si no es cuadrada */
+    margin-bottom: 20px;
+    border: 3px solid var(--color-primary); /* Borde alrededor de la foto */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+.project-image {
+    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: block; /* Para que ocupe su propia línea y el margin-bottom funcione */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Encabezado y Navegación */
+header {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 1rem 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end; /* Alinea los enlaces a la derecha */
+    gap: 20px;
+    padding: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--color-primary);
+}
+
+/* Estilos de las Secciones */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* Sección Hero (Inicio) */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+}
+
+.hero h2 {
+    font-weight: 300;
+    margin-top: 0;
+    color: #6c757d;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Sección Proyectos */
+.projects h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.project-card h4 {
+    color: var(--color-primary);
+    margin-top: 0;
+}
+
+.project-card .links a {
+    margin-right: 15px;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.project-card .links a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #e9ecef;
+    color: #6c757d;
+    font-size: 0.9rem;
+}

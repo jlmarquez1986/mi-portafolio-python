@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre | Portfolio Desarrollador Python</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="URL_DE_TU_GITHUB" target="_blank">GitHub</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <img src="{{ url_for('static', filename='img/jose.jpg') }}" alt="Tu Nombre - Foto de Perfil" class="profile-pic">
+            <h1>Hola, soy José Luis Márquez García</h1>
+            <h2>Desarrollador Python Junior</h2>
+            <p>Soy un Desarrollador Junior en Python recién graduado, con una base
+sólida en programación, estructuras de datos y gestión de bases de
+datos.
+Mi pasión por resolver problemas y mi compromiso con el aprendizaje
+continuo se reflejan en los proyectos académicos y personales que he
+llevado a cabo, los cuales abarcan desde la automatización de procesos
+hasta el análisis de datos y la creación de aplicaciones web básicas.
+Me caracterizo por mi gran capacidad de adaptación, una mentalidad
+analítica y una fuerte motivación para contribuir en equipos de
+desarrollo.
+Aporto energía, curiosidad y un enfoque meticuloso hacia la calidad del
+código, siempre con el objetivo de alcanzar la excelencia en cada
+proyecto.</p>
+            <a href="#proyectos" class="button">Ver Proyectos Destacados</a>
+        </section>
+
+        <section id="proyectos" class="projects">
+            <h3>Proyectos Recientes</h3>
+
+            <div class="project-card">
+                <h4>FacturaX</h4>
+                <img src="{{ url_for('static', filename='img/FacturaX.png') }}" alt="Captura de pantalla del Proyecto 1" class="project-image">
+                <p>El proyecto está diseñado como una solución inicial para pequeñas empresas o autónomos. Se trata de un
+                   sistema de facturación, una aplicación sencilla, visual e intuitiva que permite a los usuarios gestionar clientes, productos, servicios y generar facturas en PDF.</p>
+                <p><strong>Tecnologías usadas:</strong></p>
+                <ul>
+                    <li>Lenguaje: Python</li>
+                    <li>Framework de Interfaz Gráfica (GUI): Tkinter y ttkbootstrap.</li>
+                    <li>Base de Datos: SQLite</li>
+                </ul>
+                <p><strong>Librerías Adicionales:</strong></p>
+                <ul>
+                    <li> bcrypt (para la seguridad de contraseñas)</li>
+                    <li> reportlab (para generar los PDFs)</li>
+                </ul>
+                <div class="links">
+                    <a href="URL_DEL_REPO_1" target="_blank">Repositorio en GitHub</a>
+                    </div>
+            </div>
+
+            <div class="project-card">
+                <h4>[Nombre del Proyecto 2]</h4>
+                <p>Descripción de otro proyecto, enfócate en el impacto o el desafío técnico que resolviste.</p>
+                <div class="links">
+                    <a href="URL_DEL_REPO_2" target="_blank">Repositorio en GitHub</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contacto" class="contact">
+            <h3>Hablemos</h3>
+            <p>Estoy disponible para nuevos desafíos y colaboraciones.</p>
+            <p>Email: <a href="mailto:tu.email@ejemplo.com">jlmarquez1986@gmail.com</a></p>
+            <p>LinkedIn: <a href="URL_DE_TU_LINKEDIN" target="_blank">/in/TuUsuario</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tu Nombre. Creado con Python (Flask).</p>
+    </footer>
+</body>
+</html>
