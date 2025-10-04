@@ -42,21 +42,22 @@ El sistema incluye los siguientes módulos principales:
    Sistema de autenticación seguro con contraseñas cifradas mediante *bcrypt* y control de roles.
 
 2. **Gestión de clientes:**  
-   Registro, edición y eliminación de clientes.  
+   Registro, edición y eliminación de clientes.
+    
    ![Gestión de clientes](/assets/pantalla_clientes.png)
 
-3. **Gestión de productos y servicios:**  
+4. **Gestión de productos y servicios:**  
    Control completo de productos o servicios facturables.  
    ![Gestión de productos](/images/productos.png)
 
-4. **Facturación:**  
+5. **Facturación:**  
    Creación de facturas, cálculo automático de impuestos y exportación en PDF.  
    ![Creación de facturas](/images/facturas.png)
 
-5. **Configuración de la empresa:**  
+6. **Configuración de la empresa:**  
    Permite personalizar los datos fiscales (nombre, CIF/NIF, dirección).  
 
-6. **Gestión de usuarios:**  
+7. **Gestión de usuarios:**  
    Control de cuentas y roles (Administrador / Empleado).  
    ![Gestión de usuarios](/images/usuarios.png)
 
