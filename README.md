@@ -43,7 +43,7 @@ El sistema incluye los siguientes módulos principales:
 
 2. **Gestión de clientes:**  
    Registro, edición y eliminación de clientes.  
-   ![Gestión de clientes](/images/pantalla_clientes.png)
+   ![Gestión de clientes](/asset/pantalla_clientes.png)
 
 3. **Gestión de productos y servicios:**  
    Control completo de productos o servicios facturables.  
