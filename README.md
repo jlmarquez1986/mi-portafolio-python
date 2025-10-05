@@ -120,7 +120,6 @@ Asegúrate de tener Python 3.10+ instalado.
 
 1. ## Clona el repositorio:
 git clone https://github.com/jlmarquez1986/mi-portafolio-python.git
-cd FacturaX
 
 2. ## Instala las dependencias:
 pip install -r requisitos.txt
