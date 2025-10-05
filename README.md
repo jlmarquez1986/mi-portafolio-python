@@ -109,8 +109,6 @@ La aplicación utiliza una base de datos **SQLite** denominada `facturacion.db`.
   ```bash
   pip install bcrypt reportlab ttkbootstrap
 
-  ¡Por supuesto! Ya tienes la documentación final. He tomado el texto que me has proporcionado y lo he formateado profesionalmente a Markdown para que luzca perfecto en tu README.md.
-
 
 ⚙️ **Manual de Instalación y Ejecución**
 Aquí se explica cómo poner en marcha el proyecto, ya sea en modo desarrollo o como un ejecutable independiente.
