@@ -61,7 +61,7 @@ El sistema incluye los siguientes módulos principales:
 
 9. **Gestión de usuarios:**  
    Control de cuentas y roles (Administrador / Empleado).  
-   ![Gestión de usuarios](/images/usuarios.png)
+   ![Gestión de usuarios](/assets/Gestión_de_usuario.png)
 
 ---
 
