@@ -111,7 +111,6 @@ La aplicación utiliza una base de datos **SQLite** denominada `facturacion.db`.
 
   ¡Por supuesto! Ya tienes la documentación final. He tomado el texto que me has proporcionado y lo he formateado profesionalmente a Markdown para que luzca perfecto en tu README.md.
 
-Este contenido debe ir después de la sección "Stack Tecnológico" y el "Modelo de Datos" que ya creamos previamente.
 
 ⚙️ **Manual de Instalación y Ejecución**
 Aquí se explica cómo poner en marcha el proyecto, ya sea en modo desarrollo o como un ejecutable independiente.
