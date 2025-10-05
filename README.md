@@ -42,23 +42,27 @@ El sistema incluye los siguientes módulos principales:
    Sistema de autenticación seguro con contraseñas cifradas mediante *bcrypt* y control de roles.
 
 2. **Gestión de clientes:**  
-   Registro, edición y eliminación de clientes.  
+   Registro, edición y eliminación de clientes.
+    
    ![Gestión de clientes](/assets/pantalla_clientes.png)
 
-3. **Gestión de productos y servicios:**  
-   Control completo de productos o servicios facturables.  
-   ![Gestión de productos](/assets/gestion_productos_servicio.png)
+4. **Gestión de productos y servicios:**  
+   Control completo de productos o servicios facturables.
+     
+   ![Gestión de productos](/assets/Gestión_productos_servicio.png)
 
-4. **Facturación:**  
-   Creación de facturas, cálculo automático de impuestos y exportación en PDF.  
-   ![Pantalla de facturas](/assets/pantalla_de_facturas.png)
+6. **Facturación:**  
+   Creación de facturas, cálculo automático de impuestos y exportación en PDF.
+     
+   ![Creación de facturas](/assets/pantalla_de_facturas.png)
 
-5. **Configuración de la empresa:**  
+8. **Configuración de la empresa:**  
    Permite personalizar los datos fiscales (nombre, CIF/NIF, dirección).  
 
-6. **Gestión de usuarios:**  
-   Control de cuentas y roles (Administrador / Empleado).  
-   ![Gestión de usuarios](/assets/gestion_de_usuario.png)
+9. **Gestión de usuarios:**  
+   Control de cuentas y roles (Administrador / Empleado).
+     
+   ![Gestión de usuarios](/assets/Gestión_de_usuario.png)
 
 ---
 
@@ -75,7 +79,7 @@ El sistema incluye los siguientes módulos principales:
 ### Alternativas evaluadas
 
 - **Base de datos:** MySQL y PostgreSQL se descartaron por complejidad y necesidad de servidor externo.  
-- **Tipo de aplicación:** Se optó por una aplicación de escritorio en lugar de una aplicación web (Flask/Django) para simplificar el despliegue local.  
+- **Tipo de aplicación:** Se optó por aplicación de escritorio en lugar de web (Flask/Django) para simplificar el despliegue local.  
 
 ---
 
@@ -101,114 +105,96 @@ La aplicación utiliza una base de datos **SQLite** denominada `facturacion.db`.
 ## Requisitos de la aplicación
 
 - Python 3.10 o superior  
-- Bibliotecas necesarias:
+- Bibliotecas:  
   ```bash
   pip install bcrypt reportlab ttkbootstrap
-  ```
 
----
 
-## Manual de instalación y ejecución
+⚙️ **Manual de Instalación y Ejecución**
+Aquí se explica cómo poner en marcha el proyecto, ya sea en modo desarrollo o como un ejecutable independiente.
 
-### 1. Ejecución local (modo desarrollo)
+1. ## Ejecución Local (Modo Desarrollo)
+Asegúrate de tener Python 3.10+ instalado.
 
-Asegúrate de tener **Python 3.10+** instalado. Luego:
+1. ## Clona el repositorio:
+git clone https://github.com/jlmarquez1986/mi-portafolio-python.git
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/jlmarquez1986/mi-portafolio-python.git
-   cd FacturaX
-   ```
+2. ## Instala las dependencias:
+pip install -r requisitos.txt
 
-2. Instala las dependencias:
-   ```bash
-   pip install -r requisitos.txt
-   ```
+3. ## Ejecuta la aplicación:
+python aplicación.py
 
-3. Ejecuta la aplicación:
-   ```bash
-   python main.py
-   ```
+2. ## Generación del Ejecutable (.exe)
+Para crear un archivo ejecutable que no dependa de la instalación de Python o librerías:
+pyinstaller --onefile --windowed aplicación.py
+El archivo aplicación.py.exe se generará en la carpeta /dist.
 
-### 2. Generación del ejecutable (.exe)
+## Nota sobre la firma digital:
+Si Windows muestra la advertencia "Windows protegió su PC", haz clic en **“Más información” → “Ejecutar de todas formas”**. Esto ocurre por la falta de una firma digital, no por problemas de seguridad.
 
-Para crear un archivo ejecutable independiente:
-```bash
-pyinstaller --onefile --windowed main.py
-```
+🖥️ **Uso de la Aplicación**
+Los módulos y el flujo de trabajo principal de **FacturaX** se organizan de la siguiente manera:
 
-El archivo `FacturaX.exe` se generará en la carpeta `/dist`.
+1. **Pantalla de Inicio de Sesión:** Autenticación de usuarios con contraseñas cifradas y control de roles.
 
-> **Nota sobre la firma digital:**  
-> Si Windows muestra la advertencia *"Windows protegió su PC"*, haz clic en **“Más información” → “Ejecutar de todas formas”**.  
-> Esto ocurre por la falta de una firma digital, no por problemas de seguridad.
+2. **Menú Principal:** Acceso centralizado a todos los módulos: Clientes, Productos, Facturas, Usuarios y Configuración.
 
----
+3. **Gestión de Clientes:** Altas, ediciones y eliminaciones de clientes, con funciones de búsqueda.
 
-## Uso de la aplicación
+4. **Gestión de Productos y Servicios:** Control de inventario, precios e impuestos asociados a cada ítem facturable.
 
-1. **Pantalla de inicio de sesión:** Autenticación de usuarios con contraseñas cifradas y control de roles.  
-2. **Menú principal:** Acceso centralizado a Clientes, Productos, Facturas, Usuarios y Configuración.  
-3. **Gestión de clientes:** Altas, ediciones y eliminaciones con búsqueda por nombre o apellidos.  
-4. **Gestión de productos y servicios:** Control de inventario, precios e impuestos.  
-5. **Creación de facturas:** Flujo guiado para seleccionar un cliente, añadir ítems y guardar la factura.  
-6. **Exportación en PDF:** Generación de facturas profesionales mediante ReportLab.  
-7. **Gestión de usuarios:** Alta, edición o eliminación de cuentas y roles.  
-8. **Configuración de empresa:** Edición de los datos fiscales incluidos en las facturas.  
+5. **Creación de Facturas:** Flujo guiado para seleccionar un cliente, añadir ítems y guardar la factura.
 
----
+6. **Exportación en PDF:** Generación de una factura profesional en formato PDF (usando ReportLab).
 
-## Base de datos (gestión interna)
+7. **Gestión de Usuarios:** Permite añadir, editar o eliminar cuentas de usuario y asignar roles de acceso.
 
-Cada acción (añadir, editar o eliminar) se refleja **automáticamente** en la base de datos **SQLite**, garantizando la integridad y coherencia de la información.
+8. **Configuración de Empresa:** Edición de los datos fiscales de la empresa que se imprimen en las facturas.
 
----
+## Base de Datos (Gestión Interna)
+Cada acción (añadir, editar o eliminar) se refleja **automáticamente** en la base de datos **SQLite**. Esto garantiza la **integridad** y **coherencia** de la información sin necesidad de intervención manual.
 
-## Conclusiones
+🏆 **Conclusiones**
+FacturaX demuestra la capacidad de Python para desarrollar aplicaciones de escritorio completas, seguras y útiles para la gestión administrativa.
 
-**FacturaX** demuestra la capacidad de Python para desarrollar aplicaciones de escritorio completas, seguras y útiles para la gestión administrativa.
+## Logros Principales
 
-### Logros principales
+· Interfaz moderna e intuitiva con ttkbootstrap.
 
-- Interfaz moderna e intuitiva con **ttkbootstrap**.  
-- Seguridad en credenciales mediante **bcrypt**.  
-- Generación automática de documentos PDF profesionales.  
-- Diseño modular y escalable para futuras integraciones web o nube.
+· Seguridad en credenciales mediante cifrado **bcrypt**.
 
-### Aprendizajes personales
+· Generación automática de documentos PDF profesionales.
 
-- Profundización en POO con Python y gestión de bases de datos **SQLite**.  
-- Diseño y arquitectura de interfaces gráficas.  
-- Mejora de habilidades en modularidad, organización y resolución de problemas.  
+· Diseño modular que permite la escalabilidad futura para integraciones web o nube.
 
----
+## Aprendizajes Personales
 
-## Evolutivos del proyecto (futuras mejoras)
+· Profundización en programación orientada a objetos (POO) en Python y gestión de bases de datos **SQLite**.
 
-| Categoría | Evolutivo | Descripción |
-|------------|------------|-------------|
-| **Grado 1 (Operativo)** | Automatización | Sistema de plantillas personalizadas, envío automático por correo y copias de seguridad automáticas. |
-| **Grado 1 (Visual)** | Reportes gráficos | Implementación de reportes estadísticos con Matplotlib. |
-| **Grado 2 (Integración)** | AEAT / API | Módulo de gestión de impuestos con conexión a la Agencia Tributaria. |
-| **Grado 3 (IA)** | Contable Virtual | Uso de IA para conciliación bancaria y clasificación de transacciones. |
+· Diseño y arquitectura de interfaces gráficas funcionales.
 
----
+· Refuerzo en la modularidad, organización y resolución de problemas.
 
-## Créditos
+📈 **Evolutivos del Proyecto (Futuras Mejoras)**
+Categoría	Evolutivo	Descripción
+**Grado 1 (Operativo)**	**Automatización**	Sistema de plantillas personalizadas de factura, envío automático por correo, y copias de seguridad automáticas.
+**Grado 1 (Visual)**	**Reportes Gráficos**	Implementación de gráficos estadísticos con Matplotlib (ej. ventas por mes).
+**Grado 2 (Integración)**	**AEAT / API**	Módulo de gestión de impuestos con conexión a la Agencia Tributaria.
+**Grado 3 (IA)**	**"Contable Virtual"**	Implementación de un módulo basado en IA para automatizar la conciliación bancaria y la clasificación de transacciones.
 
-**Desarrollado por:** José Luis Márquez García  
+👨‍💻 **Créditos**
+Desarrollado por: **José Luis Márquez García**
 
-**Repositorio:**  
-[https://github.com/jlmarquez1986/mi-portafolio-python](https://github.com/jlmarquez1986/mi-portafolio-python)
-
----
+## Repositorio:
+https://github.com/jlmarquez1986/mi-portafolio-python
 
 ## Project Summary (English)
 
-**FacturaX** is a desktop billing system built with **Python**, **Tkinter**, and **SQLite**.  
-It allows small businesses and freelancers to manage clients, products, and invoices efficiently.  
-Invoices are automatically generated in **PDF** format using **ReportLab**.  
-The system includes user authentication, role management, and local data storage without servers.
+FacturaX is a desktop billing system built with **Python**, **Tkinter**, and **SQLite**.
+It enables small businesses and freelancers to manage clients, products, and invoices efficiently.
+Invoices are automatically generated as professional **PDF** files using **ReportLab**.
+The system includes user authentication, role management, and local data storage without requiring servers.
 
-**Author:** José Luis Márquez García  
-**Repository:** [FacturaX GitHub](https://github.com/jlmarquez1986/mi-portafolio-python)
+**Key technologies:** Python, Tkinter, ttkbootstrap, SQLite, bcrypt, ReportLab.
+**Author:** José Luis Márquez García.
