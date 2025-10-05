@@ -62,7 +62,7 @@ El sistema incluye los siguientes módulos principales:
 9. **Gestión de usuarios:**  
    Control de cuentas y roles (Administrador / Empleado).
      
-   ![Gestión de usuarios](/assets/diagrama.png)
+   ![Gestión de usuarios](/assets/Gestión_de_usuario.png)
 
 ---
 
@@ -98,7 +98,7 @@ La aplicación utiliza una base de datos **SQLite** denominada `facturacion.db`.
 | detalles_factura | Relación entre facturas y productos |
 | sqlite_sequence | Control interno de autoincrementos |
 
-![Esquema de base de datos](/images/database_schema.png)
+![Esquema de base de datos](/assets/diagrama.png)
 
 ---
 
