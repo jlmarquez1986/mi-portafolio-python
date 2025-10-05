@@ -52,13 +52,14 @@ El sistema incluye los siguientes módulos principales:
    ![Gestión de productos](/assets/Gestión_productos_servicio.png)
 
 6. **Facturación:**  
-   Creación de facturas, cálculo automático de impuestos y exportación en PDF.  
-   ![Creación de facturas](/images/facturas.png)
+   Creación de facturas, cálculo automático de impuestos y exportación en PDF.
+     
+   ![Creación de facturas](/assets/pantalla_de_facturas.png)
 
-7. **Configuración de la empresa:**  
+8. **Configuración de la empresa:**  
    Permite personalizar los datos fiscales (nombre, CIF/NIF, dirección).  
 
-8. **Gestión de usuarios:**  
+9. **Gestión de usuarios:**  
    Control de cuentas y roles (Administrador / Empleado).  
    ![Gestión de usuarios](/images/usuarios.png)
 
