@@ -47,7 +47,7 @@ El sistema incluye los siguientes módulos principales:
 
 3. **Gestión de productos y servicios:**  
    Control completo de productos o servicios facturables.  
-   ![Gestión de productos](/assets/gestion_productos_servicio.png)
+   ![Gestión de productos](/assets/Gestion_productos_servicio.png)
 
 4. **Facturación:**  
    Creación de facturas, cálculo automático de impuestos y exportación en PDF.  
@@ -58,7 +58,7 @@ El sistema incluye los siguientes módulos principales:
 
 6. **Gestión de usuarios:**  
    Control de cuentas y roles (Administrador / Empleado).  
-   ![Gestión de usuarios](/assets/gestion_de_usuario.png)
+   ![Gestión de usuarios](/assets/Gestion_de_usuario.png)
 
 ---
 
