@@ -60,7 +60,8 @@ El sistema incluye los siguientes módulos principales:
    Permite personalizar los datos fiscales (nombre, CIF/NIF, dirección).  
 
 9. **Gestión de usuarios:**  
-   Control de cuentas y roles (Administrador / Empleado).  
+   Control de cuentas y roles (Administrador / Empleado).
+     
    ![Gestión de usuarios](/assets/Gestión_de_usuario.png)
 
 ---
