@@ -108,3 +108,98 @@ La aplicación utiliza una base de datos **SQLite** denominada `facturacion.db`.
 - Bibliotecas:  
   ```bash
   pip install bcrypt reportlab ttkbootstrap
+
+  ¡Por supuesto! Ya tienes la documentación final. He tomado el texto que me has proporcionado y lo he formateado profesionalmente a Markdown para que luzca perfecto en tu README.md.
+
+Este contenido debe ir después de la sección "Stack Tecnológico" y el "Modelo de Datos" que ya creamos previamente.
+
+⚙️ **Manual de Instalación y Ejecución**
+Aquí se explica cómo poner en marcha el proyecto, ya sea en modo desarrollo o como un ejecutable independiente.
+
+1. ## Ejecución Local (Modo Desarrollo)
+Asegúrate de tener Python 3.10+ instalado.
+
+1. ## Clona el repositorio:
+git clone https://github.com/jlmarquez1986/mi-portafolio-python.git
+cd FacturaX
+
+2. ## Instala las dependencias:
+pip install -r requisitos.txt
+
+3. ## Ejecuta la aplicación:
+python aplicación.py
+
+2. ## Generación del Ejecutable (.exe)
+Para crear un archivo ejecutable que no dependa de la instalación de Python o librerías:
+pyinstaller --onefile --windowed aplicación.py
+El archivo aplicación.py.exe se generará en la carpeta /dist.
+
+## Nota sobre la firma digital:
+Si Windows muestra la advertencia "Windows protegió su PC", haz clic en **“Más información” → “Ejecutar de todas formas”**. Esto ocurre por la falta de una firma digital, no por problemas de seguridad.
+
+🖥️ **Uso de la Aplicación**
+Los módulos y el flujo de trabajo principal de **FacturaX** se organizan de la siguiente manera:
+
+1. **Pantalla de Inicio de Sesión:** Autenticación de usuarios con contraseñas cifradas y control de roles.
+
+2. **Menú Principal:** Acceso centralizado a todos los módulos: Clientes, Productos, Facturas, Usuarios y Configuración.
+
+3. **Gestión de Clientes:** Altas, ediciones y eliminaciones de clientes, con funciones de búsqueda.
+
+4. **Gestión de Productos y Servicios:** Control de inventario, precios e impuestos asociados a cada ítem facturable.
+
+5. **Creación de Facturas:** Flujo guiado para seleccionar un cliente, añadir ítems y guardar la factura.
+
+6. **Exportación en PDF:** Generación de una factura profesional en formato PDF (usando ReportLab).
+
+7. **Gestión de Usuarios:** Permite añadir, editar o eliminar cuentas de usuario y asignar roles de acceso.
+
+8. **Configuración de Empresa:** Edición de los datos fiscales de la empresa que se imprimen en las facturas.
+
+## Base de Datos (Gestión Interna)
+Cada acción (añadir, editar o eliminar) se refleja **automáticamente** en la base de datos **SQLite**. Esto garantiza la **integridad** y **coherencia** de la información sin necesidad de intervención manual.
+
+🏆 **Conclusiones**
+FacturaX demuestra la capacidad de Python para desarrollar aplicaciones de escritorio completas, seguras y útiles para la gestión administrativa.
+
+## Logros Principales
+
+· Interfaz moderna e intuitiva con ttkbootstrap.
+
+· Seguridad en credenciales mediante cifrado **bcrypt**.
+
+· Generación automática de documentos PDF profesionales.
+
+· Diseño modular que permite la escalabilidad futura para integraciones web o nube.
+
+## Aprendizajes Personales
+
+· Profundización en programación orientada a objetos (POO) en Python y gestión de bases de datos **SQLite**.
+
+· Diseño y arquitectura de interfaces gráficas funcionales.
+
+· Refuerzo en la modularidad, organización y resolución de problemas.
+
+📈 **Evolutivos del Proyecto (Futuras Mejoras)**
+Categoría	Evolutivo	Descripción
+**Grado 1 (Operativo)**	**Automatización**	Sistema de plantillas personalizadas de factura, envío automático por correo, y copias de seguridad automáticas.
+**Grado 1 (Visual)**	**Reportes Gráficos**	Implementación de gráficos estadísticos con Matplotlib (ej. ventas por mes).
+**Grado 2 (Integración)**	**AEAT / API**	Módulo de gestión de impuestos con conexión a la Agencia Tributaria.
+**Grado 3 (IA)**	**"Contable Virtual"**	Implementación de un módulo basado en IA para automatizar la conciliación bancaria y la clasificación de transacciones.
+
+👨‍💻 **Créditos**
+Desarrollado por: **José Luis Márquez García**
+
+## Repositorio:
+
+## Project Summary (English)
+
+FacturaX is a desktop billing system built with **Python**, **Tkinter**, and **SQLite**.
+It enables small businesses and freelancers to manage clients, products, and invoices efficiently.
+Invoices are automatically generated as professional **PDF** files using **ReportLab**.
+The system includes user authentication, role management, and local data storage without requiring servers.
+
+**Key technologies:** Python, Tkinter, ttkbootstrap, SQLite, bcrypt, ReportLab.
+**Author:** José Luis Márquez García.
+
+
