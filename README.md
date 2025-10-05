@@ -47,17 +47,18 @@ El sistema incluye los siguientes módulos principales:
    ![Gestión de clientes](/assets/pantalla_clientes.png)
 
 4. **Gestión de productos y servicios:**  
-   Control completo de productos o servicios facturables.  
+   Control completo de productos o servicios facturables.
+     
    ![Gestión de productos](/assets/Gestión_productos_servicio.png)
 
-5. **Facturación:**  
+6. **Facturación:**  
    Creación de facturas, cálculo automático de impuestos y exportación en PDF.  
    ![Creación de facturas](/images/facturas.png)
 
-6. **Configuración de la empresa:**  
+7. **Configuración de la empresa:**  
    Permite personalizar los datos fiscales (nombre, CIF/NIF, dirección).  
 
-7. **Gestión de usuarios:**  
+8. **Gestión de usuarios:**  
    Control de cuentas y roles (Administrador / Empleado).  
    ![Gestión de usuarios](/images/usuarios.png)
 
