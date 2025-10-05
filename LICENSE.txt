@@ -1,0 +1,16 @@
+LICENCIA DE VISUALIZACIÓN PARA PORTAFOLIO
+
+Copyright (c) [2025] [José Luis Márquez García]. Todos los derechos reservados.
+
+Se concede permiso para visualizar, inspeccionar y leer el código fuente de este proyecto únicamente con el fin de evaluar las habilidades del autor como parte de un portafolio de proyectos.
+
+QUEDA PROHIBIDO, SIN UN PERMISO EXPRESO Y POR ESCRITO DEL PROPIETARIO DEL COPYRIGHT:
+
+1. Usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender copias del Software.
+2. Utilizar el Software para cualquier fin comercial o no comercial.
+3. Realizar obras derivadas basadas en el Software.
+4. Distribuir el código fuente o el código objeto del Software de cualquier otra forma.
+
+EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA.
+
+Para solicitar permisos adicionales más allá de los otorgados en esta licencia, por favor contacta a: [jlmarquez1986@gmail.com].
