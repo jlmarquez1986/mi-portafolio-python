@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Luis Márquez | Portfolio Desarrollador Python</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="https://github.com/jlmarquez1986" target="_blank">GitHub</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <img src="{{ url_for('static', filename='img/jose.jpg') }}" alt="José Luis Márquez" class="profile-pic">
+            <h1>Hola, soy José Luis Márquez García</h1>
+            <h2>Desarrollador Python Junior / Fullstack Trainee</h2>
+            <p>Especializado en el desarrollo de aplicaciones completas utilizando Python para el backend y React para el frontend. Experto en el uso de herramientas de IA para optimizar el flujo de trabajo y asegurar un código limpio.</p>
+            <a href="#proyectos" class="button">Ver Proyectos Destacados</a>
+        </section>
+
+        <section id="proyectos" class="projects">
+            <h3>Proyectos Recientes</h3>
+
+            <div class="project-card">
+                <h4>FacturaX</h4>
+                <img src="{{ url_for('static', filename='img/FacturaX.png') }}" alt="Captura FacturaX" class="project-image">
+                <p>Software de gestión empresarial modular para autónomos y PYMES. Incluye login seguro, gestión de inventario y generación de PDFs profesionales.</p>
+                <p><strong>Tecnologías:</strong> Python, Tkinter, SQLite, ReportLab, Bcrypt.</p>
+                <div class="links">
+                    <a href="https://github.com/jlmarquez1986/mi-portafolio-python.git" target="_blank">Ver Código</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h4>App de Gestión de Tareas</h4>
+                <img src="{{ url_for('static', filename='img/gestion_tareas.png') }}" alt="Captura Gestión de Tareas" class="project-image">
+                <p>Solución Fullstack para la organización de flujos de trabajo con persistencia de datos relacionales y lógica CRUD completa.</p>
+                <p><strong>Tecnologías:</strong> Python, SQLite, DB Browser.</p>
+                <div class="links">
+                    <a href="https://github.com/jlmarquez1986/gestion-tareas-python.git" target="_blank">Ver Código</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h4>NeoCare Health (NEXEUS BIG DATA)</h4>
+                <img src="{{ url_for('static', filename='img/neocare.png') }}" alt="Captura NeoCare Health" class="project-image">
+                <p>Plataforma sanitaria integral desarrollada bajo metodología ágil, integrando FastAPI en el backend y React en el frontend.</p>
+                <p><strong>Tecnologías:</strong> Python (FastAPI), React, Desarrollo asistido por IA.</p>
+                <div class="links">
+                    <a href="https://github.com/jlmarquez1986/Neocare.git" target="_blank">Ver Código</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <h3>Hablemos</h3>
+            <p>Email: <a href="mailto:jlmarquez1986@gmail.com">jlmarquez1986@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/josé-luis-márquez-garcía-a56434388" target="_blank">Perfil Profesional</a></p>
+            <p>Currículum: <a href="{{ url_for('static', filename='jose-luis-marquez-garcia_cv_2026.pdf') }}" download>Descargar CV en PDF</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 José Luis Márquez. Creado con Flask.</p>
+    </footer>
+</body>
+</html>
